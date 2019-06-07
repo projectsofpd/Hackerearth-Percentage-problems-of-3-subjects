@@ -1,0 +1,11 @@
+int(input())
+alst={}
+
+for a in range(N):  
+    alst.update({a:[input().split(' ')]})
+
+b=input()  
+for a in range (N):
+    if alst.get(a)[0][0]==b:
+      c=float(alst.get(a)[0][1])+float(alst.get(a)[0][2])+float(alst.get(a)[0][3])
+      print('%.2f' % float(c/3))
